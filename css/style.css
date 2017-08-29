@@ -1,0 +1,52 @@
+body{
+  background-image: url("bckground.png");
+  background-repeat: no-repeat;
+  background-size: 1400px 600px;
+}
+.inpts{
+  margin-right: 50px;
+  background-color: transparent;
+  box-shadow: 1px 1px 2px 2px;  
+  border: 1px solid;
+  color:black;
+  padding: 12px 20px;
+  margin: 8px 0px;
+}
+.btn{
+	width: 30%;
+}
+
+.search{
+  float: left;
+  padding-top: 25px;
+
+}
+
+.search select{
+  height: 49px;
+  background: url("bckground.png");
+}
+
+.search select option{
+  background: url("bckground.png");
+}
+
+
+.logo{
+  float: left;
+  opacity: 0.8;
+  height: 100px;
+  width: 100px;
+}
+ul{
+  width: 1300px;
+  margin-left: 290px;
+}
+ul li{
+  float: left;
+  padding: 50px;
+  list-style: none;
+  border: 1px solid black;
+  height: 30px;
+  padding-top:5px;
+}
