@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dining Hall Registration</title>
+</head>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jq.js"></script>
+
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+	<fieldset>
+		<legend><center><h1>Enter Following Details</h1></center></legend>
+			<form id="frm" action="dining_reg.php" method="post">
+
+				Your Full Name:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="owner_name" required=""><br />
+
+				Dininghall's Name:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="dining_hall_name"><br />
+
+				Address of Your Dining Hall:<br /><textarea class="w3-input w3-animate-input inpts" style="width: 30%" name="addr"></textarea><br />
+
+				Your City:<input type="text" class="w3-input w3-animate-input inpts" style="width: 30%" name="city"><br />
+
+				Phone Number:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="number" name="ph_no1"><br />
+
+
+				Food Category of Your Dining Hall:
+				<select name="category" id="food_category" class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" onchange="show_other();">
+					 <option disabled selected>Choose your Category</option>
+					 <option value="Gujarati">Gujarati</option>
+					 <option value="Punjabi">Punjabi</option>
+					 <option value="South_Indian">South Indian</option>
+					 <option value="other">Other</option>
+				</select>
+				<br>
+				<div id="other_food_category_name">
+					Specify Name of other category:
+					<input class="w3-input w3-animate-input inpts" style="width: 30%;" type="text" name="other_option">
+				</div>
+				<br>
+				Per-Plate Cost(in Rs.):<input class="w3-input w3-animate-input inpts" style="width: 30%;" type = "number" name="rate"><br />
+
+				<table border=1>
+					<tr>
+						<th>Sunday</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+						<th>Saturday</th>
+					</tr>
+					<tr>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+					</tr>
+				</table><br /><br>
+				Upload Your Dininghall's photo:&nbsp;<input type="file" name="dining_hall_pic"><br /><br>
+				Your License Number Of Your Dining Hall:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="license_no"><br />
+				<center><input class="inpts btn" type="submit" name="lock" value="Submit"></center>
+			</form>
+	</fieldset>
+
+</body>
+</html>
