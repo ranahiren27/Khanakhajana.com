@@ -1,7 +1,7 @@
 body{
   background-image: url("bckground.png");
   background-repeat: no-repeat;
-  background-size: 1400px 600px;
+  background-size: 100%;
 }
 .inpts{
   margin-right: 50px;
@@ -18,7 +18,7 @@ body{
 
 .search{
   float: left;
-  padding-top: 25px;
+  padding-top: 15px;
 
 }
 
@@ -39,14 +39,77 @@ body{
   width: 100px;
 }
 ul{
-  width: 1300px;
+  width: 1050px;
   margin-left: 290px;
 }
 ul li{
   float: left;
+  top: 0px;
   padding: 50px;
   list-style: none;
   border: 1px solid black;
   height: 30px;
   padding-top:5px;
+  margin-top: -10px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.carousel-indicators{
+  padding: 5px;
+}
+
+#pic{
+  padding: 30px;
+  margin: -50px;
+  width: 1100px;
+  opacity: 0.9;
+ /* background: black;*/
+}
+
+
+.carousel-control{
+  position: fixed;
 }

@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>KhanaKhajana.com</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/slider.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onload="show()" >
 	<img class="logo" src="logo.png" />
 	<form class="search" id="search_frm">
-		<input placeholder="Search for your favourite food hubs here!!" class="inpts" type="text" name="search_place" style="width: 900px;">&nbsp;&nbsp;&nbsp;
+		<input placeholder="Search for your favourite food hubs here!!" class="inpts" type="text" name="search_place" style="width: 890px;">&nbsp;&nbsp;&nbsp;
 		<select class="inpts" name="place_item">
 			<option class="w3-input inpts" disabled selected>Select Category</option>
 			<option class="w3-input inpts">Restaurant</option>
@@ -21,8 +25,36 @@
 		<ul>
 			<li>About Us</li>
 			<li>Contact Us</li>
-			<li>Login</li>
-			<li>Sign Up</li>
+			<li>
+				<div class="dropdown">
+					  <button class="dropbtn">Login</button>
+					  <div class="dropdown-content">
+					    <a href="#">For Customer</a>
+					    <a href="#">For Owner</a>
+					  </div>
+				</div> 
+			</li>
+			<li>
+				<div class="dropdown">
+					  <button class="dropbtn">Sign Up</button>
+					  <div class="dropdown-content">
+					    <a href="#">For Customer</a>
+					    <a href="#">For Owner</a>
+					  </div>
+				</div> 
+			</li>
 		</ul>
+		<br><br><br><br><br>
+	<div class="slider">
+		  <a class="left carousel-control" onclick="prev_pic(); return false;">
+		  	<span class="glyphicon glyphicon-chevron-left"></span>
+		  </a> 
+		  	<center>
+		  	<img id="pic" height="550" width="700" src="img/1.jpg" />
+		  	</center>
+		  <a class="right carousel-control" onclick="next_pic();  return false;">
+		  	<span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+  	</div>
 </body>
 </html>
