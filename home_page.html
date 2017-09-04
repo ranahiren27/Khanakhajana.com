@@ -6,27 +6,10 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="js/slider.js"></script>
-	<script src="js/jq.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<script type="text/javascript">
-
-$(document).on('click', 'a', function(event){
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-});
-	</script>
-
 </head>
-<body id="home" onload="show()" >
-
-	<!-- Logo and Search Start-->
-<div name="home">
+<body onload="show()" >
 	<img class="logo" src="logo.png" />
 	<form class="search" id="search_frm">
 		<input placeholder="Search for your favourite food hubs here!!" class="inpts" type="text" name="search_place" style="width: 890px;">&nbsp;&nbsp;&nbsp;
@@ -38,15 +21,10 @@ $(document).on('click', 'a', function(event){
 			<option class="w3-input inpts">Tiffin Walas</option>
 		</select>&nbsp;&nbsp;&nbsp;
 		<button class="inpts">Search</button>
-	</form>
-	
-	<!-- Logo and Search end-->
-	<br><br><br><br>
-	<!-- Menu part start-->
-	
+	</form><br><br><br><br>
 		<ul>
-			<li><a href="#fotter">About Us</a></li>
-			<li><a>Contact Us</a></li>
+			<li>About Us</li>
+			<li>Contact Us</li>
 			<li>
 				<div class="dropdown">
 					  <button class="dropbtn">Login</button>
@@ -60,18 +38,14 @@ $(document).on('click', 'a', function(event){
 				<div class="dropdown">
 					  <button class="dropbtn">Sign Up</button>
 					  <div class="dropdown-content">
-					    <div id="c_login"><a>For Customer</a></div>
-					    <a href="#" id="o_login">For Owner</a>
+					    <a href="#">For Customer</a>
+					    <a href="#">For Owner</a>
 					  </div>
 				</div> 
 			</li>
 		</ul>
-		
-		<!-- Menu part end-->
-			<br><br><br><br><br>
-		<!-- Main content part start-->
-	
-	<div id="wall">
+		<br><br><br><br><br>
+	<div class="slider">
 		  <a class="left carousel-control" onclick="prev_pic(); return false;">
 		  	<span class="glyphicon glyphicon-chevron-left"></span>
 		  </a> 
@@ -82,31 +56,5 @@ $(document).on('click', 'a', function(event){
 		  	<span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
   	</div>
-</div>	
-	<!-- Main content part End-->
-	<br><br><br>
-	<!--footer start-->
-	<div name="fotter">
-	<div id="fotter">
-	    <h1>ABOUT US.....</h1>
-	    <div class ="div1">
-	    <ol class="ol1">
-	            <li>We inform our customers to the fullest true news</li> 
-	            <li>Fake accounts cannot be created at our site</li>
-	            <li>All the images displayed are correct to their fullest extents</li>
-	            <li>Website designed and implemented by Hiren Rana and Ketan Bhalerao </li>
-	            <br>Your comments mean a lot to us! Please leave a comment below!<br>
-	            <input type="text" size="80" class="inpts"><br><br>
-				<input type="button" value="Submit Comment" class="inpts"><br/>
-	    </ol>  
-	    </div>
-	    <a href="#home"><img class="foot_logo" src="logo.png"></a> 
-	    <br><br>
-	        <abbr title="Ketan Bhalerao"><img src="img/ketan.jpg" id="ketan" style="float: left; margin-left: 15px; "></abbr>
-
-	        <abbr title="Hiren Rana"><img src="img/rana.jpg" id="rana" style="float: right;"></abbr>
-	</div>
-	</div>
-	<!--footer end-->
 </body>
 </html>

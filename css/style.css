@@ -1,10 +1,8 @@
 body{
   background-image: url("bckground.png");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-
 .inpts{
   margin-right: 50px;
   background-color: transparent;
@@ -14,7 +12,6 @@ body{
   padding: 12px 20px;
   margin: 8px 0px;
 }
-
 .btn{
 	width: 30%;
 }
@@ -108,68 +105,11 @@ ul li{
   padding: 30px;
   margin: -50px;
   width: 1100px;
-  height: 510px;
   opacity: 0.9;
  /* background: black;*/
 }
 
 
 .carousel-control{
-  position: absolute;
-  top: 193px;
-}
-
-.div1{
-  float: left;
-  font-family: monospace;  
-}
-
-
-.ol1{   
-  font-kerning: auto;
-  font-family: monospace;
-  list-style-type: circle;      
-}
-
-#rana{
-  height: 200px;
-  width: 200px;
-  display: inline-block;      
-}
-
-#ketan{   
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-}
-
-#fotter{
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
-.foot_logo{
-  height: 400px;
-  width: 400px;
-  margin-top: -140px;
-  opacity: 0.7;
-  float: right;
-}
-
-.foot_logo a{
-  height: 400px;
-  width: 400px;
-  margin-top: -140px;
-  opacity: 0.7;
-}
-.foot_logo:hover{
-  height: 400px;
-  width: 400px;
-  margin-top: -140px;
-  opacity: 1;
-  float: right;
-}
-
-ul li a:hover{
-  text-decoration: none;
-  color: black;
+  position: fixed;
 }
