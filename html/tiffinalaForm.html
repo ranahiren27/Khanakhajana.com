@@ -1,0 +1,58 @@
+<h1>Enter Following Details</h1>
+			<form id="frm3" action="dining_reg.php" method="post">
+
+				Your Full Name:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="owner_name" required=""><br />
+                
+                Enter password
+                :<br /><input type="password"class="w3-input w3-animate-input inpts" style="width: 30%" name="addr"><br />
+
+                Your address:<br /><textarea class="w3-input w3-animate-input inpts" style="width: 30%" name="addr"></textarea><br />
+
+				Your City:<input type="text" class="w3-input w3-animate-input inpts" style="width: 30%" name="city"><br />
+
+				Phone Number:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="number" name="ph_no1"><br />
+
+
+				Category of food supplied by you:-
+				<select name="category" id="food_category" class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" onchange="show_other();">
+					 <option disabled selected>Choose your Category</option>
+					 <option value="Gujarati">Gujarati</option>
+					 <option value="Punjabi">Punjabi</option>
+					 <option value="South_Indian">South Indian</option>
+					 <option value="other">Other</option>
+				</select>
+				<br>
+				<div id="other_food_category_name">
+					Specify Name of other category:
+					<input class="w3-input w3-animate-input inpts" style="width: 30%;" type="text" name="other_option">
+				</div>
+				<br>
+				Per-Tiffin Cost(in Rs.):<input class="w3-input w3-animate-input inpts" style="width: 30%;" type = "number" name="rate"><br />
+
+			
+            Enter your menu on ea
+                
+                <table border=1>
+					<tr>
+						<th>Sunday</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+						<th>Saturday</th>
+					</tr>
+					<tr>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+						<td><input class="w3-input inpts" type="text"></td>
+					</tr>
+				</table><br /><br>
+				Upload Your photo:&nbsp;<input type="file" name="dining_hall_pic"><br /><br>
+				
+				<center><input class="inpts btn" type="submit" name="lock" value="Submit"></center>
+			</form>

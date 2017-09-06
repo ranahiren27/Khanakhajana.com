@@ -1,0 +1,37 @@
+<h1>Enter Following Details</h1>
+			<form id="frm1" action="restaurant_reg.php" method="post">
+
+				Your Full Name:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="owner_name" required=""><br />
+
+				Restaurant's Name:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="restaurant_name"><br />
+                
+                Enter password
+                :<br /><input type="password"class="w3-input w3-animate-input inpts" style="width: 30%" name="addr"><br />
+                
+
+				Address of Your Restaurant:<br /><textarea class="w3-input w3-animate-input inpts" style="width: 30%" name="addr"></textarea><br />
+
+				Your City:<input type="text" class="w3-input w3-animate-input inpts" style="width: 30%" name="city"><br />
+
+				Phone Number:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="number" name="ph_no1"><br />
+
+
+				Select the sub-category of the FOOD available in your restaurant: Tick the required items:
+                <br>
+                <input type="checkbox" name="gujarati" value="gujarati">Gujarati
+                 <input type="checkbox" name="punjabi" value="punjabi">Punjabi
+                 <input type="checkbox" name="south-indian" value="south-indian">South-Indian
+                 <input type="checkbox" name="continental" value="continental">Continental
+                <input type="checkbox" name = "other" value="other" onselect="show_other()">Other<br>
+                
+				
+				<div id="other_food_category_name">
+					Specify Name of other category:
+					<input class="w3-input w3-animate-input inpts" style="width: 30%;" type="text" name="other_option">
+				</div>
+				<br>
+
+				Upload Your Restaurant's photo:&nbsp;<input type="file" name="restaurant_pic"><br /><br>
+				Your License Number Of Your Restaurant:<input class="w3-input w3-animate-input inpts" style="width:30%;marin-rigth:40px;" type="text" name="license_no"><br />
+				<input class="inpts btn" type="submit" name="lock" value="Submit">
+                </form>

@@ -40,7 +40,6 @@ body{
   opacity: 0.8;
   height: 100px;
   width: 100px;
-  cursor: pointer;
 }
 ul{
   width: 1050px;
@@ -58,13 +57,6 @@ ul li{
 }
 .dropbtn {
     background-color: transparent;
-    color: #333;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropbtn:hover {
-    background-color: transparent;
     color: black;
     font-size: 16px;
     border: none;
@@ -75,7 +67,6 @@ ul li{
 .dropdown {
     position: relative;
     display: inline-block;
-    cursor: pointer;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -91,25 +82,17 @@ ul li{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 8px 6px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-.dropdown-content a:hover {
-    color: black;
-    padding: 8px 6px;
-    text-decoration: none;
-    display: block;
-    background-color: rgba(180, 125, 71, 0.4);
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgba(40,50,30,0.3);}
+.dropdown-content a:hover {background-color: transparent;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    cursor: pointer;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -186,36 +169,7 @@ ul li{
   float: right;
 }
 
-ul a li:hover{
+ul li a:hover{
   text-decoration: none;
   color: black;
-}
-
-.btn_inpts:hover {
-  opacity: 0.7;
-}
-
-.inpts:focus{
-
-  background: rgba(180, 125, 71, 0.4);
-}
-.l_dr_con {
-  width: 100%;
-  padding-top: 10px;
-  margin-left: -50px;
-}
-
-.s_dr_con {
-  margin-left: -50px;
-  min-width: 178px;
-  padding-top: 1a0px;
-}
-
-.position{
-    width: 80%;
-    height: 80%;
-    background-color: rgba(50,30,20,0.2);
-    border-radius: 10%;
-    box-shadow: 1px 1px 3px 3px;
-    align-content: left;
 }

@@ -4,11 +4,23 @@
 	<title>KhanaKhajana.com</title>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/jq.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
+	</script>
 
 </head>
 <body id="home" onload="show()" >
@@ -25,7 +37,7 @@
 			<option class="w3-input inpts">Dining Halls</option>
 			<option class="w3-input inpts">Tiffin Walas</option>
 		</select>&nbsp;&nbsp;&nbsp;
-		<button class="inpts btn_inpts">Search</button>
+		<button class="inpts">Search</button>
 	</form>
 	
 	<!-- Logo and Search end-->
@@ -33,23 +45,23 @@
 	<!-- Menu part start-->
 	
 		<ul>
-			<a href="#fotter"><li>About Us</li></a>
-			<a href="#fotter"><li>Contact Us</li></a>
-			<li class="dropdown">
-				<div>
+			<li><a href="#fotter">About Us</a></li>
+			<li><a>Contact Us</a></li>
+			<li>
+				<div class="dropdown">
 					  <button class="dropbtn">Login</button>
-					  <div class="dropdown-content l_dr_con">
-					    <div id="c_login"><a>For Customer</a></div>
-					    <div id="o_login"><a>For Owner</a></div>
+					  <div class="dropdown-content">
+					    <a href="#">For Customer</a>
+					    <a href="#">For Owner</a>
 					  </div>
 				</div> 
 			</li>
-			<li class="dropdown">
+			<li>
 				<div class="dropdown">
 					  <button class="dropbtn">Sign Up</button>
-					  <div class="dropdown-content s_dr_con">
-					    <div id="c_sing"><a>For Customer</a></div>
-					    <div id="o_sing"><a>For Owner</a></div>
+					  <div class="dropdown-content">
+					    <div id="c_login"><a>For Customer</a></div>
+					    <a href="#" id="o_login">For Owner</a>
 					  </div>
 				</div> 
 			</li>
@@ -70,7 +82,7 @@
 		  	<span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
   	</div>
-	
+</div>	
 	<!-- Main content part End-->
 	<br><br><br>
 	<!--footer start-->
@@ -85,7 +97,7 @@
 	            <li>Website designed and implemented by Hiren Rana and Ketan Bhalerao </li>
 	            <br>Your comments mean a lot to us! Please leave a comment below!<br>
 	            <input type="text" size="80" class="inpts"><br><br>
-				<input type="button" value="Submit Comment" class="inpts btn_inpts"><br/>
+				<input type="button" value="Submit Comment" class="inpts"><br/>
 	    </ol>  
 	    </div>
 	    <a href="#home"><img class="foot_logo" src="logo.png"></a> 
